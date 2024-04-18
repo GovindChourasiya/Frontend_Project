@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA_Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> E-commerce Website </title>
+    <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" /> -->
+    <script src="https://kit.fontawesome.com/896ebfa0ea.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="images/Logo_new - Copy.jpg" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="http://localhost:3000">Login</a></li>
+                <li><a href="cart.html" class="active"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li id="chat_bot_cart"><i class="fa-brands fa-rocketchat" style="cursor: pointer;"></i></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+    <section id="page-header" class="about-header">
+        <h2>#let's_talk</h2>
+        <p> LEAVE A MESSAGE, We love to hear from you! </p>
+    </section>
+    
+    <section id="cart" class="section-p1">
+        <table id="cartTable" width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody id="cartBody">
+                <tr>
+                    <td><a href="#" class="delete-row"><i class="fa-solid fa-trash" style="color: #000;"></i></a></td>
+                    <td><img src="images/products/f1.jpg" alt=""></td>
+                    <td>Cartoon Astronaut T-Shirts</td>
+                    <td>$118.19</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$118.19</td>
+                </tr>
+                <tr>
+                    <td><a href="#" class="delete-row"><i class="fa-solid fa-trash" style="color: #000;"></i></a></td>
+                    <td><img src="images/products/f2.jpg" alt=""></td>
+                    <td>Cartoon Astronaut T-Shirts</td>
+                    <td>$118.19</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$118.19</td>
+                </tr>
+                <tr>
+                    <td><a href="#" class="delete-row"><i class="fa-solid fa-trash" style="color: #000;"></i></a></td>
+                    <td><img src="images/products/f3.jpg" alt=""></td>
+                    <td>Cartoon Astronaut T-Shirts</td>
+                    <td>$118.19</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$118.19</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="cart-add" class="section-p1">
+        <div id="coupon">
+            <h3>Apply Coupon</h3>
+            <div>
+                <input type="text" id="inputCoupon" placeholder="Enter your coupon">
+                <button class="normal" id="applyCoupon">Apply</button>
+            </div>
+        </div>
+        <div id="subtotal">
+            <h3>Cart Total</h3>
+            <table>
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <td>$ 335</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td id="total_id"><strong>$ 335</strong></td>
+                </tr>
+            </table>
+            <button class="normal" type="submit" id="confirmOrder">Confirm Order</button>
+        </div>
+    </section>
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="images/Logo_new - Copy.jpg" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> 599 Grand Trunk Road, Jalandhar</p>
+            <p><strong>Phone:</strong>  +01 2222 256 / (+91) 01 2548 6526</p>
+            <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="about.html">About us</a>
+            <a href="cart.html">Delivery Information</a>
+            <a href="about.html">Privacy Policy</a>
+            <a href="about.html">Terms & Conditions</a>
+            <a href="contact.html">Contact us</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="contact.html">Sign In</a>
+            <a href="cart.html">View Cart</a>
+            <a href="cart.html">My Wishlist</a>
+            <a href="cart.html">Track My Order</a>
+            <a href="contact.html">Help</a>
+        </div>
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="images/pay/app.jpg" alt="">
+                <img src="images/pay/play.jpg" alt="">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="images/pay/payy.png" alt="">
+        </div>
+        <!-- <div class="copyright">
+            <p>@ 2024, GSR etc - Ecommerce Website</p>
+        </div> -->
+    </footer>
+    <script src="script.js"></script>
+
+    <script>
+    document.getElementById("applyCoupon").addEventListener('click',()=>{
+    const val = document.getElementById('inputCoupon');
+    val.value = '';
+    alert("Coupon applied successfully :)");
+});
+
+    document.getElementById("confirmOrder").addEventListener('click',()=>{
+        alert("Order places successfully. Keep shopping :)");
+        window.location.href = "index.html";
+    });
+
+    </script>
+
+    <script>
+        document.getElementById("chat_bot_cart").addEventListener('click',()=>{
+    window.open('http://localhost:3000', '_blank', 'width=600,height=400');
+});
+    </script>
+
+     <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Retrieve cart items from localStorage
+            var cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+    
+            // Populate cart table with stored items
+            var cartBody = document.getElementById("cartBody");
+            cartItems.forEach(function(item) {
+                var newRow = document.createElement("tr");
+                newRow.innerHTML = `
+                    <td><a href="#" class="delete-row"><i class="fa-solid fa-trash" style="color: #000;"></i></a></td>
+                    <td><img src="${item.imageSrc}" alt=""></td>
+                    <td>${item.name}</td>
+                    <td>${item.price}</td>
+                    <td><input type="number" value="1"></td>
+                    <td>${item.price}</td>
+                `;
+                cartBody.appendChild(newRow);
+            });
+    
+            // Function to remove a row when trash icon is clicked
+            document.querySelectorAll('.delete-row').forEach(item => {
+                item.addEventListener('click', event => {
+                    const row = event.target.closest('tr');
+                    row.style.transition = "all 0.5s ease"; // Add transition effect
+                    row.style.opacity = "0"; // Fade out the row
+                    setTimeout(() => {
+                        row.remove(); // Remove the row from the DOM
+                        // Update row indices after removing the row
+                        updateRowIndices();
+                        // Update localStorage after removing the item
+                        updateLocalStorage();
+                        // Recalculate subtotal and total prices
+                        updateTotalPrices();
+                    }, 500); // Wait for the transition to complete before removing
+                });
+            });
+    
+            // Function to update row indices after removing a row
+            function updateRowIndices() {
+                const cartRows = document.querySelectorAll('#cartTable tbody tr');
+                cartRows.forEach((row, index) => {
+                    row.querySelector('.delete-row').setAttribute('data-index', index + 1); // Update data-index attribute
+                });
+            }
+    
+            // Function to update localStorage after modifying the cart
+            function updateLocalStorage() {
+                const cartRows = document.querySelectorAll('#cartTable tbody tr');
+                const updatedCartItems = [];
+                cartRows.forEach(row => {
+                    updatedCartItems.push({
+                        imageSrc: row.querySelector('img').src,
+                        name: row.querySelectorAll('td')[2].textContent,
+                        price: row.querySelectorAll('td')[3].textContent
+                    });
+                });
+                localStorage.setItem("cartItems", JSON.stringify(updatedCartItems));
+            }
+    
+            // Function to recalculate subtotal and total prices
+            function updateTotalPrices() {
+                const cartRows = document.querySelectorAll('#cartTable tbody tr');
+                let subtotal = 0;
+                cartRows.forEach(row => {
+                    subtotal += parseFloat(row.querySelectorAll('td')[3].textContent.replace('$', ''));
+                });
+                const shipping = 0; // Assuming shipping is free
+                // let total = subtotal + shipping;
+                document.querySelector('#subtotal td:nth-child(2)').textContent = `$ ${subtotal.toFixed(2)}`;
+                document.getElementById('total_id').textContent = `$ ${subtotal.toFixed(2)}`;
+            }
+    
+            // Initial calculation of subtotal and total prices
+            updateTotalPrices();
+        });
+    </script>
+    <script>
+        window.embeddedChatbotConfig = {
+        chatbotId: "BlwUxIgKF38xRLiDSee25",
+        domain: "www.chatbase.co"
+        }
+        </script>
+        <script
+        src="https://www.chatbase.co/embed.min.js"
+        chatbotId="BlwUxIgKF38xRLiDSee25"
+        domain="www.chatbase.co"
+        defer>
+        </script>
+    
+
+</body>
+</html>
